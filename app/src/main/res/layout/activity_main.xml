@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context="com.kalpana.prasun.myphoto.MainActivity"
+    android:weightSum="1">
+
+
+    <ImageButton
+        android:id="@+id/bCapture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:onClick="launchCamera"
+        android:src="@android:drawable/ic_menu_camera"
+        android:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/ivGallery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:onClick="openGallery"
+        android:src="@android:drawable/ic_menu_gallery"
+        android:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/ivImage"
+        android:layout_width="wrap_content"
+        android:layout_height="335dp"
+        android:maxHeight="300dp"
+        android:maxWidth="300dp"
+        android:src="@android:drawable/btn_star_big_on"
+        android:layout_weight="0.68" />
+
+</LinearLayout>
